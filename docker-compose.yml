@@ -1,0 +1,7 @@
+services:
+  wordchain-bot:
+    build: .
+    container_name: wordchain-telegram-bot
+    restart: unless-stopped
+    env_file:
+      - .env
